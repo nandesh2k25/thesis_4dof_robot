@@ -1,2 +1,2 @@
-# thesis_4dof_robot
-MDN-based inverse kinematics pipeline for a 4DOF 3D robotic arm, with dataset generation, FK-consistency training, best-of-K evaluation, unseen-data testing, and thesis-ready result visualizations.
+# Thesis 4DOF_robot
+This project implements a complete machine-learning pipeline for solving inverse kinematics of a 4DOF robotic arm in 3D. The robot uses base yaw, shoulder pitch, elbow pitch, and wrist pitch joints. Instead of predicting a single joint configuration, the model uses a Mixture Density Network to generate multiple possible IK solutions. Each candidate is checked using forward kinematics, and the solution with the lowest pose error is selected. The pipeline includes dataset generation, normalization, MDN training, FK-consistency loss, early stopping, best-of-K evaluation, unseen-data testing, plots, CSV tables, checkpoints, and experiment logs.
